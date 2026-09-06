@@ -1,0 +1,24 @@
+dataset: dgraphfin
+hidden: 64
+layers: 2
+attention_heads: 4
+feature_bins: 8
+memory_tokens: 24
+max_aug_drop: 0.12
+contrast_weight: 0.03
+calibration_weight: 0.03
+calibration_representation_mix: 0.85
+reliability_floor: 0.05
+uncertainty_penalty_init: 0.50
+tau: 0.20
+dropout: 0.25
+focal_gamma: 0.50
+pos_weight_scale: 1.0
+lr: 0.001
+weight_decay: 0.0015
+max_epochs: 150
+patience: 10
+contrast_batch: 512
+fanouts: [15, 10]
+batch_size: 2048
+eval_batch_size: 4096
